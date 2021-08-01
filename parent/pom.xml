@@ -24,7 +24,7 @@
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
         <version>23</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>org.apache.pdfbox</groupId>
@@ -55,7 +55,7 @@
              see also https://stackoverflow.com/a/28695766/535646 
              https://maven.apache.org/surefire/maven-surefire-plugin/faq.html#late-property-evaluation
         -->
-        <surefireArgLine />
+        <surefireArgLine/>
       </properties>
 
     <dependencyManagement>
@@ -74,7 +74,7 @@
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.10.0</version>
+                <version>2.11.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -131,7 +131,7 @@
             </activation>
             <properties>
                 <!-- needs to exist even if empty due to problems with jacoco-maven-plugin -->
-                <addmod />
+                <addmod/>
             </properties>
         </profile>
         <!-- call mvn with -Pjdk9 or call with -Daddmod="...." -->
@@ -147,7 +147,7 @@
             </activation>
             <properties>
                 <!-- needs to exist even if empty due to problems with jacoco-maven-plugin -->
-                <addmod />
+                <addmod/>
             </properties>
         </profile>
         <!-- need to specify release version so that if PDFBox is built with
@@ -175,14 +175,14 @@
             </activation>
             <properties>
                 <!-- needs to exist even if empty due to problems with jacoco-maven-plugin -->
-                <addmod />
+                <addmod/>
             </properties>
         </profile>
         <profile>
             <id>pedantic</id>
             <properties>
                 <!-- needs to exist even if empty due to problems with jacoco-maven-plugin -->
-                <addmod />
+                <addmod/>
             </properties>
             <build>
                 <plugins>
